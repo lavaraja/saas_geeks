@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TravelCompanion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+
+ <div class="panel panel-primary" style="color:#303F9F" >
+    <div class="panel-heading"><p>Challo</p></div>
+     <br>
+<div class="container"  >
+
+<div id="map2" style="color:#303F9F" style="width:400px;">
+    <div class="form-group">
+    <label  >Current location:</label><br>
+<label  style="display:block;  float: left;">Forum value mall</label>
+ <label  style="display:block; text-align:right;"><a href="#">Edit</a></label>
+
+        <hr>
+<label  style="display:block;  float: left;"> {{Nearest_Bus_stop}}</label>
+ <label  style="display:block; text-align:right;"> {{Distance}} </label>
+
+<p style="display:block;  float: left;"> {{ Cur_location }} </p> <p style="display:block;  text-align:right;">5Km</p>
+<hr>
+        <label  style="display:block;  float: left;"> {{ destination }} </label>
+ <label  style="display:block; text-align:right;">Distance:</label>
+        <p style="display:block;  float: left;">Indira nagar</p> <p style="display:block;  text-align:right;">1.2Km</p>
+
+<hr>
+<label  style="display:block;  float: left;">Avilable Buses</label>
+ <label  style="display:block; text-align:right;"> {{buses_found }}:</label>
+
+
+        <hr>
+<label  style="display:block;  float: left;"> {{Buses_no}} </label>
+ <label  style="display:block; text-align:right;"> {{arrives_in }}:</label>
+
+        <hr>
+</div>
+</div>
+</div>
+     <div class="panel-footer">Chalo@2016</div>
+  </div>
+
+
+</body>
+</html>
