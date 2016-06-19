@@ -17,16 +17,22 @@ app.secret_key="secretkey"
 
 app.secret_key = 'xxxxyyyyyzzzzz'
 
-@app.route('/',methods=['GET'])
-def home():
-    error='h'
-    return render_template('test.html')   # return a string
+@app.route('/fetch',methods=['GET','POST'])
+def fetch3():
+    if request.method=="POST":
+        return render_template('test.html')   # return a string
 
-@app.route('/fetch', methods=['GET', 'POST'])
-def fetch():
     dest=request.form['query']
     print dest
     return render_template('test2.html')   # return a string
+
+@app.route('/',methods=['GET'])
+def home():
+    error='h'
+
+    return render_template('test.html')   # return a string
+
+
 # start the server with the 'run()' method
 if __name__ == '__main__':
     app.run()
